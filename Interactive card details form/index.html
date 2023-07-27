@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="section1"></section>
+        <section class="section2">
+            <div class="message">
+                <img src="images/icon-complete.svg">
+                <h1 class="msgH1">THANK YOU!</h1>
+                <p class="msgP">We've added your card details</p>
+                <button class="msgBtn">Continue</button>
+            </div>
+            <div class="card">
+            <div class="divName">
+            <p>CARDHOLDER NAME</p>
+            <input class="name" type="text" placeholder="e.g. Jane Appleseed">
+            <p class="errorName">Can't be blank</p>
+            </div>
+            <div class="divNum">
+            <p>CARD NUMBER</p>
+            <input class="number" type="text" placeholder="e.g. 1234 5678 9123 0000">
+            <p class="errorNum">Wrong format, numbers only</p>
+        </div>
+            <div class="details">
+                <div class="date">
+                    <p>EXP. DATE (MM/YY)</p>
+                    <div class="mmyy">
+                        <input class="mm" type="text" placeholder="MM">
+                        <input class="yy" type="text" placeholder="YY">
+                    </div>
+                    <p class="errorDate">Can't be blank</p>
+                </div>
+                <div class="cvcDet">
+                    <p>CVC</p>
+                    <input class="cvc" type="text" placeholder="e.g. 123">
+                    <p class="errorCVC">Can't be blank</p>
+                </div>
+            </div>
+            <button class="confirmBtn">Confirm</button>
+        </div>
+        </section>
+        <div class="cardFront">
+            <div class="circles"><div class="circleBig"></div>
+            <div class="circleSmall"></div></div>
+            <p class="cardNum">0000 0000 0000 0000</p>
+            <div class="cardSubDiv">
+                <p class="cardName">JANE APPLESEED</p>
+                <div class="divDates">
+                    <p class="cardMonth">00</p>
+                    <p class="line">/ </p>
+                    <p class="cardYears">00</p>
+                </div>
+            </div>
+        </div>
+        <div class="cardBack">
+            <p class="cardCVC">000</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

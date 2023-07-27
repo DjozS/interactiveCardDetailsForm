@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+body{
+    display: flex;
+    font-family: 'Space Grotesk', sans-serif;
+    position: relative;
+}
+.section1{
+    background-image: url("images/bg-main-desktop.png");
+    width:30%;
+    min-height:100vh;
+}
+.section2{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width:70%;
+}
+.details{
+    display: flex;
+}
+input{
+    border: 1px solid hsla(279, 6%, 55%, 35%);
+    color:hsl(276, 3%, 66%);
+    border-radius:5px;
+    padding:10px;
+    cursor:pointer;
+}
+.divName, .divNum, .details{
+    margin-bottom:20px;
+}
+.name, .number, button{
+    width:300px;
+}
+.mmyy{
+    margin-right:10px;
+}
+.mm, .yy{
+    width:60px;
+}
+.cvc{
+    width:167px;
+}
+p{
+    font-size: 11px;
+    font-weight: 700;
+    color:hsl(278, 68%, 11%);
+    margin-bottom:5px;
+}
+button{
+    border:none;
+    background:hsl(278, 68%, 11%);
+    color:white;
+    border-radius:5px;
+    height:40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.397);
+    cursor: pointer;
+}
+.cardFront{
+    background:url("images/bg-card-front.png");
+    background-size: cover;
+    height:190px;
+    width:350px;
+    position: absolute;
+    border-radius:8px;
+    left:11%;
+    top:15%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.397);
+    color:white;
+    padding:20px;
+}
+.cardBack{
+    background:url("images/bg-card-back.png");
+    background-size: cover;
+    height:190px;
+    width:350px;
+    position: absolute;
+    border-radius:8px;
+    left:17%;
+    top:50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.397);
+}
+.cardName, .cardMonth, .cardYears, .line{
+    color:hsl(270, 3%, 87%);
+    font-weight: 500;
+    font-size: 12px;
+}
+.cardMonth, .line{
+    margin-right:4px;
+}
+.cardNum{
+    font-size:31px;
+    margin-bottom:20px;
+    color:white;
+    font-weight: 500;
+}
+.cardCVC{
+    color:white;
+    margin-top:88px;
+    margin-left:280px;
+    font-size:12px;
+    letter-spacing: 1.5px;
+}
+.cardSubDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.circles{
+    display: flex;
+    align-items: center;
+    margin-bottom:50px;
+}
+.circleBig{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background:white;
+    margin-right:10px;
+}
+.circleSmall{
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    border: 1px solid hsl(270, 3%, 87%);
+}
+.errorName, .errorNum, .errorDate, .errorCVC{
+    color:hsl(0, 100%, 66%);
+    display:none;
+    margin-top:5px;
+}
+.divDates{
+    max-width:40px;
+    display: flex;
+}
+.message{ 
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.msgH1{
+    font-weight: 500;
+    margin-top:30px;
+}
+.msgP{
+    color:hsl(0, 0%, 64%);
+    margin-top:10px;
+    margin-bottom:30px;
+    font-size:15px;
+    font-weight: 700;
+}
+.msgBtn{
+    letter-spacing: 1px;
+}
+@media(max-width:500px){
+    body{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardFront{
+        left:5%;
+        top:16%;
+        z-index:1;
+    }
+    .cardBack{
+        top:1.8%;
+        left:20%;
+        z-index: 0;
+    }
+    .section1{
+        width:500px;
+        min-height:250px;
+        background-image: url("images/bg-main-mobile.png");
+        margin-bottom:150px;
+        background-size: cover;
+    }
+    input, button{
+        height:50px;
+    }
+    button{
+        margin-bottom:50px;
+    }
+}
